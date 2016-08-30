@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dpdevelly.comparacaodeprodutos.PrincipalActivity">
+
+    <TextView
+        android:text="1ª Opção:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toTopOf="@+id/activity_principal"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_principal"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:text="R$"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginStart="24dp"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_principal"
+        android:layout_marginLeft="24dp"
+        android:textColor="@color/colorPrimary" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edtVal1"
+        android:layout_width="150dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginStart="10dp"
+        app:layout_constraintLeft_toRightOf="@+id/textView2"
+        android:layout_marginLeft="10dp" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edtVal2"
+        android:layout_marginStart="10dp"
+        app:layout_constraintLeft_toRightOf="@+id/textView3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        android:layout_width="150dp" />
+
+    <TextView
+        android:text="R$"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textSize="18sp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_principal"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:text="2ª Opção:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textSize="18sp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_principal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintTop_toBottomOf="@+id/edtVal1"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:text="ml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginStart="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/edtVal1"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:text="ml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        android:layout_marginStart="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/edtVal2"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/colorPrimary" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edtMl1"
+        android:layout_width="100dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintLeft_toRightOf="@+id/textView8"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edtMl2"
+        android:layout_marginStart="10dp"
+        app:layout_constraintLeft_toRightOf="@+id/textView9"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:text="Comparar"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btComparar"
+        android:textSize="14sp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="@+id/activity_principal"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_principal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/edtVal2"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:text="Texto Informativo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtInfo"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/btComparar"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_principal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="@+id/activity_principal"
+        android:layout_marginRight="16dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_red_light" />
+</android.support.constraint.ConstraintLayout>

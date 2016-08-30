@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_resultado"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dpdevelly.comparacaodeprodutos.ResultadoActivity">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:id="@+id/txtResultado"
+        android:textSize="16sp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toTopOf="@+id/activity_resultado"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_resultado"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="@+id/activity_resultado"
+        android:layout_marginRight="16dp"
+        android:text="Texto do Resultado"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="350dp" />
+
+    <Button
+        android:text="Nova Consulta"
+        android:layout_width="130dp"
+        android:layout_height="49dp"
+        android:id="@+id/btVoltar"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_resultado"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="@+id/activity_resultado"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtResultado"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_light" />
+</android.support.constraint.ConstraintLayout>
